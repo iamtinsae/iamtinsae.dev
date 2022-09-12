@@ -1,16 +1,41 @@
 @tailwind base;
 
-a {
-  @apply text-blue-700;
-}
-
-a:hover {
-  @apply border-b-2 border-blue-700;
-}
-
 @tailwind components;
 
 @tailwind utilities;
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/Sofia Pro Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: light;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/Sofia Pro Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: bold;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/fonts/Sofia Pro Bold.woff") format("woff");
+}
+
+::selection {
+  background-color: #47a3f3;
+  color: #fefefe;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .content p {
   @apply my-6;
@@ -18,4 +43,8 @@ a:hover {
 
 .content ul {
   @apply my-6;
+}
+
+#__next {
+  @apply min-h-screen bg-gray-0 dark:bg-gray-900;
 }
