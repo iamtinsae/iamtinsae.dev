@@ -30,8 +30,8 @@ const NavItem = (props: NavItemProps) => {
 };
 
 const Header = () => (
-  <header className="z-50 flex items-center justify-between py-8">
-    <nav className="-ml-[0.75rem]">
+  <header className="flex items-center justify-between py-8">
+    <nav className="z-50 -ml-[0.75rem]">
       <NavItem name="Home" href="/" />
       <NavItem name="Works" href="/works" />
       <NavItem name="Resume" href="/resume" />
