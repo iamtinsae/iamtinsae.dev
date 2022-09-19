@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import Image from 'next/future/image';
 import Link from 'next/link';
 import * as React from 'react';
@@ -44,7 +45,8 @@ const WorkDescription = ({
 const WorkShowCase = ({
   children,
   progress,
-}: PropsWithChildren & { progress: number }) => {
+  widthHeavy,
+}: PropsWithChildren & { progress: number; widthHeavy: boolean }) => {
   const translateY = Math.max(-50, -(progress - 0.5) * 50);
 
   return (
@@ -54,7 +56,14 @@ const WorkShowCase = ({
         transform: `translateY(${translateY}px)`,
       }}
     >
-      <div className="w-full max-w-md px-10 pt-10 lg:pt-0">{children}</div>
+      <div
+        className={cn(
+          'w-full px-10 pt-10 lg:pt-0 max-w-md',
+          widthHeavy ? 'max-w-xl' : 'max-w-md'
+        )}
+      >
+        {children}
+      </div>
     </div>
   );
 };
@@ -97,7 +106,10 @@ const Works = ({ works }: WorksProps) => {
                     {work.description}
                   </h6>
                 </WorkDescription>
-                <WorkShowCase progress={progress}>
+                <WorkShowCase
+                  progress={progress}
+                  widthHeavy={work.image.width > work.image.height}
+                >
                   <Image
                     src={work.image.src}
                     height={work.image.height}
