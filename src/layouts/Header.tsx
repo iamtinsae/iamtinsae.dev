@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import dynamic from 'next/dynamic';
 import { Link } from 'react-scroll';
 
@@ -13,7 +14,14 @@ const NavItem = dynamic(
     Promise.resolve((props: NavItemProps) => {
       return (
         <Link href={`#${props.to}`} to={props.to} spy smooth duration={1.4}>
-          <span className="hidden rounded-lg p-1 font-normal text-gray-600 transition-all hover:bg-gray-200 dark:text-gray-400 dark:hover:bg-gray-800 sm:px-3 sm:py-2 md:inline-block">
+          <span
+            className={cn(
+              'hidden rounded-lg p-1 transition-all hover:bg-gray-200 dark:text-gray-400 dark:hover:bg-gray-800 sm:px-3 sm:py-2 md:inline-block',
+              props.to === 'about'
+                ? 'font-semibold text-gray-900 dark:text-gray-200'
+                : 'text-gray-600 font-normal'
+            )}
+          >
             <span>{props.name}</span>
           </span>
         </Link>
