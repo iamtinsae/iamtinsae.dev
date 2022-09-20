@@ -6,7 +6,39 @@ import type { Work } from '@/lib/types';
 import { Main } from '@/templates/Main';
 import { AppConfig } from '@/utils/AppConfig';
 
-const works: Array<Work> = [];
+const works: Array<Work> = [
+  {
+    title: "I've created",
+    subTitle: 'Kibrewosen',
+    description: 'Online learning platform.',
+    image: {
+      src: 'https://images.unsplash.com/photo-1661961112134-fbce0fdf3d99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
+      height: 1920,
+      width: 1080,
+    },
+    link: 'https://www.kibrewosen.com/',
+  },
+  {
+    title: 'I made',
+    subTitle: 'Mockify',
+    description: 'API mocking made easy.',
+    image: {
+      src: 'https://images.unsplash.com/photo-1661961112134-fbce0fdf3d99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
+      height: 1920,
+      width: 1080,
+    },
+  },
+  {
+    title: "I've created",
+    subTitle: 'Kasting',
+    description: 'An online casting tool focused on both artists and hirers.',
+    image: {
+      src: '/assets/images/kasting.png',
+      height: 1167,
+      width: 1966,
+    },
+  },
+];
 
 const Index = () => {
   return (
@@ -17,7 +49,7 @@ const Index = () => {
         }
       >
         <section className="min-h-screen py-8">
-          <div className="absolute inset-0 flex max-w-md flex-col justify-center px-6 md:inset-x-auto md:px-0">
+          <div className="absolute inset-0 flex max-w-screen-md flex-col justify-center px-6 md:inset-x-auto md:w-full md:px-0">
             <div className="w-80">
               <ThemedLogo />
             </div>
@@ -37,7 +69,7 @@ const Index = () => {
                 </span>
                 .
               </p>
-              <p className="mt-4 max-w-xl text-2xl text-gray-700 dark:text-gray-300">
+              <p className="mt-4 max-w-screen-xl text-2xl text-gray-700 dark:text-gray-300">
                 Sometimes I post blogs and some of my work over here. If you
                 want to keep up with my work follow me on&nbsp;
                 <a
