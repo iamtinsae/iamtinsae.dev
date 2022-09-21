@@ -37,7 +37,7 @@ const Header = () => (
     <nav className="z-50 -ml-[0.75rem]">
       <NavItem name="Home" to="about" />
       <NavItem name="Works" to="works" />
-      <NavItem name="Resume" to="resume" />
+      {/* <NavItem name="Resume" to="resume" /> */}
       <NavItem name="Uses" to="uses" />
     </nav>
     <ThemeSwitcher />
