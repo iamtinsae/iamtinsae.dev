@@ -48,3 +48,20 @@ html {
 #__next {
   @apply min-h-screen bg-gray-0 dark:bg-gray-900;
 }
+
+.curved-underline {
+    position: relative;
+    display: inline-block !important;
+}
+
+.curved-underline::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    height: 7px;
+    width: 100% !important;
+    border: solid 8px yellow;
+    border-color: yellow transparent transparent transparent;
+    border-radius: 50%;
+}
