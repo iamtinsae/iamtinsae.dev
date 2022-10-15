@@ -29,7 +29,7 @@ const Index = () => {
                 <span className="cursor-pointer font-normal underline dark:text-gray-200">
                   Freelance
                 </span>{' '}
-                Worker and <b>2nd</b> year student at{' '}
+                Worker and <b>3rd</b> year student at{' '}
                 <span className="cursor-pointer font-normal text-gray-800 dark:text-gray-200">
                   Unity University
                 </span>
