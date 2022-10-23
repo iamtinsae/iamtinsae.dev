@@ -19,6 +19,7 @@ const ThemeSwitcher = () => {
     <button
       className="z-50 rounded bg-gray-200 p-2 transition hover:ring-2 hover:ring-gray-400 dark:bg-gray-800 dark:ring-gray-600"
       onClick={toggleTheme}
+      aria-label="Change theme"
     >
       {resolvedTheme === 'light' ? (
         <svg
