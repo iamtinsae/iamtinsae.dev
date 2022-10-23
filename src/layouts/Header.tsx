@@ -4,6 +4,7 @@ import NextLink from 'next/link';
 import { Link } from 'react-scroll';
 
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
+import { resumeLink } from '@/lib/constants';
 
 type NavItemProps = {
   name: string;
@@ -65,7 +66,7 @@ const Header = () => (
       <NavItem name="Home" to="about" />
       <NavItem name="Works" to="works" />
       <NavItem name="Uses" to="uses" />
-      <NavItem name="View • Resume" to="/assets/resume.pdf" isLink />
+      <NavItem name="View • Resume" to={resumeLink} isLink />
     </nav>
     <ThemeSwitcher />
   </header>
