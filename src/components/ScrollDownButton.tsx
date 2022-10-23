@@ -7,6 +7,7 @@ type ScrollDownButtonProps = {
 const ScrollDownButton = ({ to }: ScrollDownButtonProps) => (
   <div className="absolute right-8 bottom-2 -translate-y-1/2 sm:right-auto sm:left-1/2 sm:bottom-5 sm:-translate-x-1/2">
     <Link
+      href={`#${to}`}
       to={to}
       as="button"
       spy
