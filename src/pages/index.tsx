@@ -32,7 +32,9 @@ const Index = () => {
                 at{' '}
                 <a
                   href="https://www.ashewatechnology.com/"
+                  target={'_blank'}
                   className="cursor-pointer font-normal text-gray-800 hover:text-green-500 dark:text-gray-200 dark:hover:text-green-500"
+                  rel="noreferrer"
                 >
                   <b>Ashewa Technologies</b>.
                 </a>
