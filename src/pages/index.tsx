@@ -26,14 +26,16 @@ const Index = () => {
               </h1>
               <p className="mt-4 text-2xl text-gray-800 dark:text-gray-300">
                 Currently I am a{' '}
-                <span className="cursor-pointer font-normal underline dark:text-gray-200">
-                  Freelance
+                <span className="cursor-pointer font-bold underline dark:text-gray-200">
+                  Software Developer Specialist
                 </span>{' '}
-                Worker and <b>3rd</b> year student at{' '}
-                <span className="cursor-pointer font-normal text-gray-800 dark:text-gray-200">
-                  Unity University
-                </span>
-                .
+                at{' '}
+                <a
+                  href="https://www.ashewatechnology.com/"
+                  className="cursor-pointer font-normal text-gray-800 hover:text-green-500 dark:text-gray-200 dark:hover:text-green-500"
+                >
+                  <b>Ashewa Technologies</b>.
+                </a>
               </p>
               <p className="mt-4 max-w-screen-xl text-2xl text-gray-700 dark:text-gray-300">
                 Sometimes I post blogs and some of my work over here. If you
