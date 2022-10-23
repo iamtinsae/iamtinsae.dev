@@ -135,7 +135,8 @@ const Index = () => {
                 Raycast
               </a>{' '}
               as my default launcher. I switched recently from{' '}
-              <a href="">Alfred</a> for it&apos;s simplicity and features.
+              <a href="https://www.alfredapp.com/">Alfred</a> for it&apos;s
+              simplicity and features.
             </li>
 
             <li>
