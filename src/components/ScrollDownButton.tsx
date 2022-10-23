@@ -9,13 +9,13 @@ const ScrollDownButton = ({ to }: ScrollDownButtonProps) => (
     <Link
       href={`#${to}`}
       to={to}
-      as="button"
+      as="a"
       spy
       smooth
-      type="button"
       className="inline-flex animate-bounce cursor-pointer items-center rounded-full border border-transparent bg-gray-900 p-4 text-white shadow-sm focus:outline-none dark:bg-white"
       offset={4}
       duration={2.5}
+      aria-label="Scroll Down"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
