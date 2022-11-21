@@ -1,11 +1,91 @@
+import {
+  DjangoOriginalIcon,
+  ExpressOriginalWordmarkIcon,
+  FlutterPlainIcon,
+  NextjsOriginalWordmarkIcon,
+  NginxOriginalIcon,
+  NodejsPlainWordmarkIcon,
+  TailwindcssPlainIcon,
+} from 'react-devicons';
+
 import ScrollDownButton from '@/components/ScrollDownButton';
 import ThemedLogo from '@/components/ThemedLogo';
+import UsesSection from '@/components/Uses';
 import Works from '@/components/Works';
 import { Meta } from '@/layouts/Meta';
-import { works } from '@/lib/data';
+import type { IconsProp, Work } from '@/lib/types';
 import { Main } from '@/templates/Main';
 import { AppConfig } from '@/utils/AppConfig';
 
+export const works: Array<Work> = [
+  {
+    title: "I've created",
+    subTitle: 'Kibrewosen',
+    description: 'Online learning platform.',
+    image: {
+      src: '/assets/images/works/kibrewosen.png',
+      height: 1167,
+      width: 2032,
+    },
+    link: 'https://www.kibrewosen.com/',
+    technologies: [DjangoOriginalIcon, NginxOriginalIcon],
+  },
+  {
+    title: "I'm making",
+    subTitle: 'Mockify',
+    description: 'API mocking made easy.',
+    image: {
+      src: '/assets/images/works/mockify.png',
+      height: 1167,
+      width: 2032,
+    },
+    technologies: [
+      (props: IconsProp) => (
+        <NextjsOriginalWordmarkIcon
+          {...props}
+          className={`!fill-white ${props?.className}`}
+        />
+      ),
+      TailwindcssPlainIcon,
+    ],
+  },
+  {
+    title: "I've created",
+    subTitle: 'Kasting',
+    description: 'An online casting tool focused on both artists and hirers.',
+    image: {
+      src: '/assets/images/works/kasting.png',
+      height: 1167,
+      width: 1966,
+    },
+    technologies: [
+      NodejsPlainWordmarkIcon,
+      (props: IconsProp) => (
+        <ExpressOriginalWordmarkIcon
+          {...props}
+          className={`!fill-white ${props?.className}`}
+        />
+      ),
+      (props: IconsProp) => (
+        <NextjsOriginalWordmarkIcon
+          {...props}
+          className={`!fill-white ${props?.className}`}
+        />
+      ),
+    ],
+  },
+  {
+    title: "I'm developing",
+    subTitle: 'GymBro',
+    description: 'Personal training app for personals and athletes.',
+    image: {
+      src: '/assets/images/works/gymbro.png',
+      height: 1099,
+      width: 579,
+    },
+    technologies: [FlutterPlainIcon],
+  },
+];
 const Index = () => {
   return (
     <>
@@ -71,126 +151,7 @@ const Index = () => {
         <Works works={works} />
       </section>
       <section id="uses" className="bg-gray-50 p-8 dark:bg-gray-900">
-        <div className="mx-auto max-w-screen-md p-8">
-          <h1 className="curved-underline my-8 text-5xl text-gray-900 dark:text-gray-200">
-            Uses
-          </h1>
-          <p className="text-lg dark:text-gray-300">
-            My most frequently used softwares. Currently I&apos;m using{' '}
-            <b>macOS</b> on my <b>Dell-G5</b> that has <b>core i7</b> processor
-            and <b>16GiB</b> of ram.
-          </p>
-          <h1 className="curved-underline my-8 text-2xl text-gray-900 dark:text-gray-200">
-            Editor + Terminal
-          </h1>
-          <ul className="list-[square] text-xl text-gray-800 dark:text-gray-200">
-            <li>
-              I&apos;ve been using{' '}
-              <a
-                href="https://code.visualstudio.com/"
-                target={'_blank'}
-                className="text-blue-600 dark:text-blue-500"
-                rel="noreferrer"
-              >
-                Visual Studio Code
-              </a>{' '}
-              for the past 3-4 years.
-            </li>
-            <li>
-              <a
-                href="https://iterm2.com/"
-                target={'_blank'}
-                className="text-blue-600 dark:text-blue-500"
-                rel="noreferrer"
-              >
-                iTerm
-              </a>{' '}
-              has been my choice of terminal.
-            </li>
-
-            <li>
-              I&apos;ve been using{' '}
-              <a
-                href="https://www.google.com/chrome/"
-                target={'_blank'}
-                className="text-blue-600 dark:text-blue-500"
-                rel="noreferrer"
-              >
-                Chrome
-              </a>{' '}
-              as my main browser.
-            </li>
-          </ul>
-
-          <h1 className="curved-underline my-8 text-2xl text-gray-900 dark:text-gray-200">
-            Desktop Apps
-          </h1>
-          <ul className="list-[square] text-xl text-gray-800 dark:text-gray-200">
-            <li>
-              I use{' '}
-              <a
-                href="https://www.raycast.com/"
-                target={'_blank'}
-                className="text-blue-600 dark:text-blue-500"
-                rel="noreferrer"
-              >
-                Raycast
-              </a>{' '}
-              as my default launcher. I switched recently from{' '}
-              <a href="https://www.alfredapp.com/">Alfred</a> for it&apos;s
-              simplicity and features.
-            </li>
-
-            <li>
-              <a
-                href="https://telegram.org/"
-                target={'_blank'}
-                className="text-blue-600 dark:text-blue-500"
-                rel="noreferrer"
-              >
-                Telegram
-              </a>{' '}
-              has been my main communication software for the past years.
-            </li>
-            <li>
-              I use{' '}
-              <a
-                href="https://www.vagrantup.com/"
-                target={'_blank'}
-                className="text-blue-600 dark:text-blue-500"
-                rel="noreferrer"
-              >
-                Vagrant
-              </a>{' '}
-              with Virtual Box for virtualization.
-            </li>
-
-            <li>
-              Been using{' '}
-              <a
-                href="https://www.genymotion.com/"
-                target={'_blank'}
-                className="text-blue-600 dark:text-blue-500"
-                rel="noreferrer"
-              >
-                Genymotion
-              </a>{' '}
-              as my android emulator.
-            </li>
-
-            <li>
-              <a
-                href="https://www.spotify.com/"
-                target={'_blank'}
-                className="text-blue-600 dark:text-blue-500"
-                rel="noreferrer"
-              >
-                Spotify
-              </a>{' '}
-              for listening to musics and podcasts.
-            </li>
-          </ul>
-        </div>
+        <UsesSection />
       </section>
     </>
   );
