@@ -105,6 +105,13 @@ const Works = ({ works }: WorksProps) => {
                   <p className="mt-2 text-2xl text-gray-200">
                     {work.description}
                   </p>
+                  <div className="flex gap-4">
+                    {work.technologies.map(
+                      (Icon: React.FC<{ className: string }>, idx) => (
+                        <Icon className="!h-12 !w-12" key={idx} />
+                      )
+                    )}
+                  </div>
                 </WorkDescription>
                 <WorkShowCase
                   progress={progress}
