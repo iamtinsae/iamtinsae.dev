@@ -8,6 +8,7 @@ export type Work = {
     width: number;
     height: number;
   };
+  technologies: React.FunctionComponent[];
 };
 
 export type PropsWithChildren = {
