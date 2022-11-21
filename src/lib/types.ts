@@ -1,3 +1,7 @@
+import type { DjangoOriginalIcon } from 'react-devicons';
+
+export type IconsProp = typeof DjangoOriginalIcon['defaultProps'];
+
 export type Work = {
   title: string;
   subTitle: string;
