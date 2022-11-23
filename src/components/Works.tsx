@@ -51,7 +51,7 @@ const WorkShowCase = ({
 
   return (
     <div
-      className="flex h-screen flex-1 justify-center lg:items-center"
+      className="flex flex-1 justify-center lg:h-screen lg:items-center"
       style={{
         transform: `translateY(${translateY}px)`,
       }}
