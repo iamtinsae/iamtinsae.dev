@@ -102,7 +102,7 @@ const Works = ({ works }: WorksProps) => {
                   <div className="text-4xl font-semibold tracking-tight md:text-4xl">
                     <WorkLink href={work.link ?? ''}>{work.subTitle}</WorkLink>
                   </div>
-                  <p className="mt-2 text-2xl text-gray-200">
+                  <p className="mt-2 hidden text-2xl text-gray-200 lg:block">
                     {work.description}
                   </p>
                   <div className="flex gap-4">
