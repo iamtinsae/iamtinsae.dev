@@ -37,6 +37,7 @@ specifiers:
   postcss: ^8.4.16
   prettier: ^2.7.1
   react: ^18.2.0
+  react-devicons: ^2.14.0
   react-dom: ^18.2.0
   react-scroll: ^1.8.7
   rimraf: ^3.0.2
@@ -51,6 +52,7 @@ dependencies:
   next-seo: 5.5.0_c3hne4hwj64hb7tofigd3bvkji
   next-themes: 0.2.1_c3hne4hwj64hb7tofigd3bvkji
   react: 18.2.0
+  react-devicons: 2.14.0
   react-dom: 18.2.0_react@18.2.0
   react-scroll: 1.8.7_biqbaboplfbrettd7655fr4n2y
 
@@ -3869,6 +3871,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /react-devicons/2.14.0:
+    resolution: {integrity: sha512-4k/fQvDapIQJDlLKTEM8yxV5UTF8OvGrGeM4F06KRQYGYAtP8CxjC1LBWEyHL0M7rHga1rH9H14kJoFIb8O2kg==}
+    dependencies:
+      react: 17.0.2
+    dev: false
+
   /react-dom/18.2.0_react@18.2.0:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
@@ -3895,6 +3903,14 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /react/17.0.2:
+    resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
     dev: false
 
   /react/18.2.0:
