@@ -2,21 +2,10 @@ import {
   BashPlainIcon,
   ChromePlainIcon,
   DockerPlainIcon,
-  LinuxPlainIcon,
   VisualstudioPlainIcon,
 } from 'react-devicons';
 
 const usesList = [
-  {
-    name: 'PC Spec',
-    Icon: LinuxPlainIcon,
-    description: (
-      <>
-        <b>Dell-G5</b> <i>I7</i> with <b>16GiB Ram</b> and{' '}
-        <b>256 SSD & 1TB HDD</b> Running <b>Linux</b>
-      </>
-    ),
-  },
   {
     name: 'Editor',
     Icon: VisualstudioPlainIcon,
@@ -99,7 +88,7 @@ const UsesSection = () => (
       {usesList.map((uses, idx) => (
         <div
           key={uses.name}
-          className={`block justify-between border-inherit !fill-black shadow-[inset_0_0_0_0_#31302B] transition-all duration-700 ease-in-out hover:scale-105 hover:border-white hover:!fill-white hover:text-white hover:shadow-[inset_2000px_0_0_0_#000] dark:!fill-white hover:dark:border-black hover:dark:!fill-black hover:dark:text-black hover:dark:shadow-[inset_2000px_0_0_0_#fff] md:flex ${
+          className={`block justify-between border-inherit !fill-black shadow-[inset_0_0_0_0_#31302B] transition-all duration-500 ease-in-out hover:border-white hover:!fill-white hover:text-white hover:shadow-[inset_2000px_0_0_0_#000] dark:!fill-white hover:dark:border-black hover:dark:!fill-black hover:dark:text-black hover:dark:shadow-[inset_2000px_0_0_0_#fff] md:flex ${
             idx > 0 ? 'border-t' : ''
           }`}
         >
