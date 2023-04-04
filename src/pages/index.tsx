@@ -102,23 +102,8 @@ const Index = () => {
 
             <div className="mt-16">
               <h1 className="font-sans text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
-                Tinsae Tasew, a developer.
+                Tinsae Tasew, a fullstack developer.
               </h1>
-              <p className="mt-4 text-2xl text-gray-800 dark:text-gray-300">
-                Currently I am a{' '}
-                <span className="cursor-pointer font-bold underline dark:text-gray-200">
-                  Software Developer Specialist
-                </span>{' '}
-                at{' '}
-                <a
-                  href="https://www.ashewatechnology.com/"
-                  target={'_blank'}
-                  className="cursor-pointer font-normal text-gray-800 hover:text-green-500 dark:text-gray-200 dark:hover:text-green-500"
-                  rel="noreferrer"
-                >
-                  <b>Ashewa Technologies</b>.
-                </a>
-              </p>
               <p className="mt-4 max-w-screen-xl text-2xl text-gray-700 dark:text-gray-300">
                 Sometimes I post blogs and some of my work over here. If you
                 want to keep up with my work follow me on&nbsp;
