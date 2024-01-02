@@ -88,7 +88,7 @@ const UsesSection = () => (
       {usesList.map((uses, idx) => (
         <div
           key={uses.name}
-          className={`block justify-between border-inherit !fill-black shadow-[inset_0_0_0_0_#31302B] transition-all duration-500 ease-in-out hover:border-white hover:!fill-white hover:text-white hover:shadow-[inset_2000px_0_0_0_#000] dark:!fill-white hover:dark:border-black hover:dark:!fill-black hover:dark:text-black hover:dark:shadow-[inset_2000px_0_0_0_#fff] md:flex ${
+          className={`block justify-between border-inherit !fill-black shadow-[inset_0_0_0_0_#31302B] transition-all duration-500 ease-in-out dark:!fill-white md:flex ${
             idx > 0 ? 'border-t' : ''
           }`}
         >
