@@ -12,8 +12,8 @@ type PropsWithChildren = {
 
 const WorkBackground = () => (
   <div className="sticky top-0 grid min-h-screen w-full grid-cols-1 lg:grid-cols-2">
-    <div className="h-[30vh] bg-gray-900 dark:bg-black lg:h-auto"></div>
-    <div className="h-[70vh] bg-gray-50 lg:min-h-screen"></div>
+    <div className="h-[30vh] bg-gray-50 dark:bg-black lg:h-auto"></div>
+    <div className="h-[70vh] bg-slate-100 dark:bg-gray-800 lg:min-h-screen"></div>
   </div>
 );
 
@@ -32,7 +32,7 @@ const WorkDescription = ({
 
   return (
     <div
-      className="flex h-[30vh] flex-col items-center justify-center px-20 text-3xl lg:h-auto"
+      className="flex h-[30vh] flex-col items-center justify-center px-20 text-3xl text-black dark:text-white lg:h-auto"
       style={{
         transform: `translateY(${translateY}px)`,
       }}
@@ -101,7 +101,7 @@ const Works = ({ works }: WorksProps) => {
                   <div className="text-4xl font-semibold tracking-tight md:text-4xl">
                     <WorkLink href={work.link ?? ''}>{work.subTitle}</WorkLink>
                   </div>
-                  <p className="mt-2 hidden text-2xl text-gray-200 lg:block">
+                  <p className="mt-2 hidden text-2xl text-gray-800 dark:text-gray-200 lg:block">
                     {work.description}
                   </p>
                   <div className="flex gap-4">

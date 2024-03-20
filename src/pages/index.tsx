@@ -126,7 +126,7 @@ const Index = () => {
       <section id="works" className="">
         <Works works={works} />
       </section>
-      <section id="uses" className="bg-gray-50 p-8 dark:bg-gray-900">
+      <section id="uses" className="bg-gray-0 p-8 dark:bg-gray-900">
         <UsesSection />
       </section>
     </>

@@ -85,10 +85,10 @@ const UsesSection = () => (
     {usesList.map((uses) => (
       <div className="mt-4" key={uses.name}>
         <h4 className="font-sans text-xl font-bold text-gray-900 dark:text-white md:text-2xl">
-          <uses.Icon className="mr-2 inline h-8 w-8 !fill-inherit" />{' '}
+          <uses.Icon className="mr-2 inline size-8 !fill-black dark:!fill-white" />{' '}
           {uses.name}
         </h4>
-        <p className="mt-4 max-w-screen-xl text-lg text-gray-700 dark:text-gray-300">
+        <p className="mt-4 max-w-screen-xl text-lg font-light text-gray-700 dark:text-gray-200">
           {uses.description}
         </p>
       </div>
