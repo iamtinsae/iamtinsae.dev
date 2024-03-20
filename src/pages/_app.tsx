@@ -1,5 +1,6 @@
 import '../styles/global.css';
 
+import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 
@@ -10,6 +11,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
     <ScrollObserver>
       <Component {...pageProps} />
     </ScrollObserver>
+    <Analytics />
   </ThemeProvider>
 );
 

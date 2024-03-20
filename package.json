@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@types/react-scroll": "^1.8.4",
+    "@vercel/analytics": "^1.2.2",
     "classnames": "^2.3.1",
     "next": "^12.3.0",
     "next-seo": "^5.5.0",
