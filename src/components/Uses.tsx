@@ -80,30 +80,19 @@ const usesList = [
 ];
 
 const UsesSection = () => (
-  <div className="mx-auto max-w-screen-lg p-8">
-    <div className="border border-black dark:border-white">
-      <div className="border-b border-inherit p-8">
-        <h1 className="text-5xl font-light">Uses</h1>
+  <div className="mx-auto max-w-screen-md p-8">
+    <h1 className="text-5xl font-light">Uses</h1>
+    {usesList.map((uses) => (
+      <div className="mt-4" key={uses.name}>
+        <h4 className="font-sans text-xl font-bold text-gray-900 dark:text-white md:text-2xl">
+          <uses.Icon className="mr-2 inline h-8 w-8 !fill-inherit" />{' '}
+          {uses.name}
+        </h4>
+        <p className="mt-4 max-w-screen-xl text-lg text-gray-700 dark:text-gray-300">
+          {uses.description}
+        </p>
       </div>
-      {usesList.map((uses, idx) => (
-        <div
-          key={uses.name}
-          className={`block justify-between border-inherit !fill-black shadow-[inset_0_0_0_0_#31302B] transition-all duration-500 ease-in-out dark:!fill-white md:flex ${
-            idx > 0 ? 'border-t' : ''
-          }`}
-        >
-          <div className="border-inherit p-8 md:border-r">
-            <h2 className="text-3xl">
-              <uses.Icon className="mr-2 inline h-8 w-8 !fill-inherit" />{' '}
-              {uses.name}
-            </h2>
-          </div>
-          <div className="flex items-center p-8">
-            <p className="text-left">{uses.description}</p>
-          </div>
-        </div>
-      ))}
-    </div>
+    ))}
   </div>
 );
 
