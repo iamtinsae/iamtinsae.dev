@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
 
@@ -12,7 +12,7 @@ type PropsWithChildren = {
 
 const WorkBackground = () => (
   <div className="sticky top-0 grid min-h-screen w-full grid-cols-1 lg:grid-cols-2">
-    <div className="h-[30vh] bg-gray-900 dark:bg-[#000] lg:h-auto"></div>
+    <div className="h-[30vh] bg-gray-900 dark:bg-black lg:h-auto"></div>
     <div className="h-[70vh] bg-gray-50 lg:min-h-screen"></div>
   </div>
 );
@@ -59,7 +59,7 @@ const WorkShowCase = ({
       <div
         className={cn(
           'w-full px-10 pt-10 lg:pt-0 max-w-md',
-          widthHeavy ? 'max-w-xl' : 'max-w-md'
+          widthHeavy ? 'max-w-xl' : 'max-w-md',
         )}
       >
         {children}
@@ -69,14 +69,13 @@ const WorkShowCase = ({
 };
 
 const WorkLink = ({ children, href }: PropsWithChildren & { href: string }) => (
-  <Link href={href}>
-    <a
-      target="_blank"
-      rel="noreferrer"
-      className="underline decoration-1 underline-offset-8"
-    >
-      {children}
-    </a>
+  <Link
+    href={href}
+    target="_blank"
+    rel="noreferrer"
+    className="underline decoration-1 underline-offset-8"
+  >
+    {children}
   </Link>
 );
 
@@ -109,7 +108,7 @@ const Works = ({ works }: WorksProps) => {
                     {work.technologies.map(
                       (Icon: React.FC<{ className: string }>, idx) => (
                         <Icon className="!h-12 !w-12" key={idx} />
-                      )
+                      ),
                     )}
                   </div>
                 </WorkDescription>

@@ -19,18 +19,16 @@ const NavItem = dynamic(
       if (props.isLink) {
         return (
           <NextLink href={props.to} target="_blank" passHref>
-            <a target={'_blank'}>
-              <span
-                className={cn(
-                  'hidden rounded-lg p-1 transition-all hover:bg-gray-200 dark:text-gray-400 dark:hover:bg-gray-800 sm:px-3 sm:py-2 md:inline-block',
-                  props.to === 'about'
-                    ? 'font-semibold text-gray-900 dark:text-gray-200'
-                    : 'text-gray-600 font-normal'
-                )}
-              >
-                <span>{props.name}</span>
-              </span>
-            </a>
+            <span
+              className={cn(
+                'hidden rounded-lg p-1 transition-all hover:bg-gray-200 dark:text-gray-400 dark:hover:bg-gray-800 sm:px-3 sm:py-2 md:inline-block',
+                props.to === 'about'
+                  ? 'font-semibold text-gray-900 dark:text-gray-200'
+                  : 'text-gray-600 font-normal',
+              )}
+            >
+              <span>{props.name}</span>
+            </span>
           </NextLink>
         );
       }
@@ -47,7 +45,7 @@ const NavItem = dynamic(
               'hidden rounded-lg p-1 transition-all hover:bg-gray-200 dark:text-gray-400 dark:hover:bg-gray-800 sm:px-3 sm:py-2 md:inline-block',
               props.to === 'about'
                 ? 'font-semibold text-gray-900 dark:text-gray-200'
-                : 'text-gray-600 font-normal'
+                : 'text-gray-600 font-normal',
             )}
           >
             <span>{props.name}</span>
@@ -57,12 +55,12 @@ const NavItem = dynamic(
     }),
   {
     ssr: false,
-  }
+  },
 );
 
 const Header = () => (
   <header className="flex items-center justify-between py-8">
-    <nav className="z-50 -ml-[0.75rem]">
+    <nav className="z-50 -ml-3">
       <NavItem name="Home" to="about" />
       <NavItem name="Works" to="works" />
       <NavItem name="Uses" to="uses" />
