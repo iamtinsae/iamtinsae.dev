@@ -115,16 +115,7 @@ const Index = () => {
                 >
                   Github
                 </a>
-                . I&apos;m also available on{' '}
-                <a
-                  href="https://t.me/iamtinsae"
-                  className="text-blue-600"
-                  target={'_blank'}
-                  rel="noreferrer"
-                >
-                  Telegram
-                </a>{' '}
-                if that&apos;s your thing.
+                .
               </p>
             </div>
           </div>
