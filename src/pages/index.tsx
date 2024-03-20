@@ -17,7 +17,7 @@ import type { IconsProp, Work } from '@/lib/types';
 import { Main } from '@/templates/Main';
 import { AppConfig } from '@/utils/AppConfig';
 
-export const works: Array<Work> = [
+export const works: Work[] = [
   {
     title: "I've created",
     subTitle: 'Kibrewosen',
